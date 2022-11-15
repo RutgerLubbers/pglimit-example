@@ -15,7 +15,7 @@ public class ApplicationInitializer implements ApplicationRunner {
 
   @Override
   public void run(ApplicationArguments args) {
-    for (int postId = 0; postId < 10; ++postId) {
+    for (int postId = 0; postId < 3; ++postId) {
       Post post = Post.builder()
           .id("Post #" + postId)
           .title("Title #" + postId)

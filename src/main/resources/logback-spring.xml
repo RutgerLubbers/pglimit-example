@@ -2,6 +2,7 @@
 <configuration>
   <include resource="org/springframework/boot/logging/logback/base.xml"/>
 
+  <logger name="org.hibernate.dialect.MyPgDialect" level="DEBUG"/>
   <logger name="org.hibernate.SQL" level="DEBUG"/>
   <logger name="org.hibernate.type.descriptor.sql.BasicBinder" level="TRACE"/>
 </configuration>
