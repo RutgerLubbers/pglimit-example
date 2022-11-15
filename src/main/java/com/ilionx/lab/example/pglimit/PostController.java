@@ -18,7 +18,7 @@ public class PostController {
 
   @GetMapping("/posts")
   public ResponseEntity<List<Post>> getPost() {
-    PageRequest pageable = PageRequest.of(1, 10);
+    PageRequest pageable = PageRequest.of(1, 3);
     Page<Post> page = postRepository.findAll(pageable);
     return ResponseEntity.ok(page.getContent());
   }
